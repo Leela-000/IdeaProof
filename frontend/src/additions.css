@@ -1,0 +1,372 @@
+
+/* ══════════════════════════════════════════════════════════
+   WorthIt AI – Milestone 1 UI Refinement Additions
+   Added to supplement index.css — do not remove base styles
+══════════════════════════════════════════════════════════ */
+
+/* ---------- Example Panel (SubmitPage) ---------- */
+.example-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 18px;
+  margin-top: 10px;
+  background: var(--color-teal-pale);
+  border: 1px solid #99E6DC;
+  border-radius: var(--radius-md);
+  gap: 0;
+}
+
+.example-panel__header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  color: var(--color-teal);
+  margin-bottom: 8px;
+}
+
+.example-panel__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-teal);
+  letter-spacing: 0.03em;
+}
+
+/* ---------- Extraction card — editable state ---------- */
+.extraction-card--editing {
+  border-color: var(--color-teal);
+  box-shadow: 0 0 0 3px rgba(15,118,110,0.10);
+}
+
+.extraction-card__edit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-teal);
+  background: var(--color-teal-pale);
+  border: 1px solid #99E6DC;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.extraction-card__edit-btn:hover {
+  background: #99E6DC;
+}
+
+/* ---------- Research Overview Stats ---------- */
+.overview-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.overview-stat__value {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  line-height: 1;
+}
+
+.overview-stat__label {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}
+
+/* ---------- Insight Card (MarketInsights) ---------- */
+.insight-card {
+  padding: 20px 24px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-teal);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.insight-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.insight-card__top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.insight-card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insight-card__title {
+  font-weight: 700;
+  color: var(--color-navy);
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.insight-card__snippet {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+
+.insight-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ---------- Search Result Card ---------- */
+.search-result-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 20px 22px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-result-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: #B2D9D3;
+}
+
+.search-result-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.search-result-card__logo {
+  width: 36px;
+  height: 36px;
+  background: var(--color-teal-pale);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-teal);
+  font-family: var(--font-heading);
+  flex-shrink: 0;
+}
+
+.search-result-card__title {
+  font-weight: 600;
+  color: var(--color-navy);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.search-result-card__desc {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin: 0;
+  line-height: 1.65;
+}
+
+.search-result-card__why {
+  padding: 10px 12px;
+  background: var(--color-amber-light);
+  border: 1px solid #FCD34D;
+  border-radius: var(--radius-sm);
+}
+
+.search-result-card__footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 4px;
+}
+
+/* ---------- Data unavailable notice ---------- */
+.data-unavailable-notice {
+  padding: 20px 22px;
+  background: var(--color-surface);
+  border: 1.5px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-light);
+}
+
+/* ---------- Research Signal Tiles ---------- */
+.signal-tile {
+  padding: 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.signal-tile:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.signal-tile__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Question Cards ---------- */
+.question-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.question-card:hover {
+  border-color: var(--color-teal);
+  box-shadow: var(--shadow-sm);
+}
+
+.question-card__num {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--color-teal-pale);
+  color: var(--color-teal);
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ---------- Roadmap Items ---------- */
+.roadmap-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  opacity: 0.85;
+}
+
+.roadmap-item__lock {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ---------- Research Quality Card ---------- */
+.quality-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.quality-card__row {
+  display: flex;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.875rem;
+  align-items: flex-start;
+}
+
+.quality-card__row:last-of-type {
+  border-bottom: none;
+}
+
+.quality-card__row--warn {
+  background: var(--color-amber-light);
+}
+
+.quality-card__key {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--color-navy);
+  min-width: 130px;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+
+.quality-card__val {
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.quality-card__disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 14px 20px;
+  background: var(--color-navy);
+  color: rgba(255,255,255,0.7);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ---------- Results nav updated for 8 items ---------- */
+@media (max-width: 1024px) {
+  .results-layout    { grid-template-columns: 1fr; }
+  .results-sidebar   { position: static; }
+  .results-nav       { flex-direction: row; flex-wrap: wrap; }
+  .search-result-card-grid { grid-template-columns: 1fr !important; }
+}
+
+@media (max-width: 768px) {
+  .signal-tile-grid,
+  .question-card-grid { grid-template-columns: 1fr !important; }
+
+  .overview-stat__value { font-size: 1.25rem; }
+
+  .quality-card__key { min-width: 100px; }
+}
+/* Two-column responsive grid for search result cards */
+.results-two-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .results-two-col {
+    grid-template-columns: 1fr;
+  }
+}
