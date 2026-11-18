@@ -1,1 +1,1 @@
-# IdeaProof
+# WorthIt AI
